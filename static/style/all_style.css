@@ -1,10 +1,37 @@
 body{
     margin:0%;
-    display: flexbox;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.title_divs {
+#title-div {
     margin-top: 0%;
     margin-bottom: 5%;
-    height: 40%;
+    height: 40vh;
+    width: 100vw;
+}
+
+.columns-40-40 {
+    width: 80vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 5vh;
+}
+
+.column-40
+{
+    width: 40vw;
+}
+
+.columns-25-25-25 {
+    display: inline-flex;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 5vh;
+    width: 86vw;
+    font-size: 6vw;
+}
+
+.column-25 {
+    width: 26vw;
 }

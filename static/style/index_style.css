@@ -1,6 +1,47 @@
 #title {
-        background: url("/static/image/bees_1.jpg") no-repeat center center fixed;
+        background: url("/static/image/bees_6.jpg") no-repeat center center fixed;
         background-size: cover;
-        height: 50%;
+        height: 100%;
         overflow: hidden;
+
+        font-family: "Archivo Black";
+        font-size: 14vh;
+        padding-top: 13vh;
+        color: #ffc107;
+}
+
+#column-1{
+        margin-right: 4vw;
+
+        border-radius: 20px;
+
+        background: url("/static/image/bees_6.jpg") no-repeat center center fixed;
+        background-size: cover;
+        height: 30vh;
+        overflow: hidden;
+}
+
+#column-2{
+        margin-right: 4vw;
+
+        border-radius: 20px;
+
+        background: url("/static/image/bees_6.jpg") no-repeat center center fixed;
+        background-size: cover;
+        height: 30vh;
+        overflow: hidden;
+}
+
+#column-3{
+        border-radius: 20px;
+
+        background: url("/static/image/bees_6.jpg") no-repeat center center fixed;
+        background-size: cover;
+        height: 30vh;
+        overflow: hidden;
+}
+
+.index-button{
+        padding-top: 12vh;
+        text-shadow: 2px 2px #ffc107;
 }

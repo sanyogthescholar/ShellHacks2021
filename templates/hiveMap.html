@@ -1,6 +1,19 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
     <head>
+
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="/static/style/bootstrap.css"/>
+        <link rel="stylesheet" href="/static/style/bootstrap-grid.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/static/style/all_style.css">
+        <link rel="stylesheet" href="/static/style/hiveMap_style.css">
+
         <title>BeeBuzz Hive Checker</title>
     </head>
 
@@ -15,9 +28,9 @@
         </div>
 
         <nav id = "navigation" class="">
-            <a href="{{url_for('index.html')}}" class="">Main Page</a>
-            <a href="{{url_for('ourSolution.html')}}" class="">Our Solution</a>
-            <a href="{{url_for('addHive.html')}}" class="">Add a Hive</a>
+            <a href="{{url_for('index')}}" class="">Main Page</a>
+            <a href="{{url_for('ourSolution')}}" class="">Our Solution</a>
+            <a href="{{url_for('addHive')}}" class="">Add a Hive</a>
         </nav>
 
         <div class = "columns-40-40">

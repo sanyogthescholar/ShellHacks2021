@@ -6,15 +6,28 @@ body{
 
 #title-div {
     margin-top: 0%;
-    margin-bottom: 5%;
-    height: 40vh;
+    height: 24vw;
     width: 100vw;
+}
+
+#title {
+        background: url("/static/image/bees_6.jpg") no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+
+        font-family: "Archivo Black";
+        font-size: 8vw;
+        padding-top: 8vw;
+        color: #ffc107;
+        text-shadow: 0px 2px #fff;
 }
 
 .columns-40-40 {
     width: 80vw;
     margin-left: 7vw;
     margin-right: 7vw;
+    margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
@@ -34,4 +47,14 @@ body{
 
 .column-25 {
     width: 26vw;
+}
+
+.nav-item{
+    color: #ffc107;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item:hover{
+    background-color: #ffc107;
+    color: #414139;
 }

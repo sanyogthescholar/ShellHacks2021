@@ -14,6 +14,7 @@ def index():
 def hiveMap():
     humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
     if humidity is not None and temperature is not None:
+        print(f"Humidity: {humidity}\nTemperature: {temperature}")
         return render_template('hiveMap.html', humidity=humidity, temperature=temperature)
     else:
         return render_template('hiveMap.html', humidity=0, temperature=0)

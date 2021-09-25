@@ -3,6 +3,9 @@ import Adafruit_DHT
 
 app = Flask(__name__)
 
+DHT_SENSOR = Adafruit_DHT.DHT22
+DHT_PIN = 4
+
 @app.route('/')
 def index():
     return render_template('index.html')

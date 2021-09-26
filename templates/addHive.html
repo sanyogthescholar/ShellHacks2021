@@ -1,12 +1,27 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
     <head>
+
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="/static/style/bootstrap.css"/>
+        <link rel="stylesheet" href="/static/style/bootstrap-grid.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/static/style/all_style.css">
+        <link rel="stylesheet" href="/static/style/addHive_style.css">
+
+        <link rel="icon" href="../static/image/icon.svg"/>
+
         <title>BeeBuzz Solution</title>
     </head>
 
     <body>
 
-        <div class="title-divs">
+        <div id="title-div">
 
             <h1 id="title">Our Solution</h1>
 
@@ -15,9 +30,9 @@
         </div>
 
         <nav id = "navigation" class="">
-            <a href="index.html" class="">Main Page</a>
-            <a href="ourSolution.html" class="">Our Solution</a>
-            <a href="hiveMap.html" class="">Check Hives</a>
+            <a href="url_for('index')" class="">Main Page</a>
+            <a href="url_for('ourSolution')" class="">Our Solution</a>
+            <a href="url_for('hiveMap')" class="">Check Hives</a>
         </nav>
 
         <div class = "columns-40-40">

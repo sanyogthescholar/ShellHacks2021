@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="/static/style/bootstrap.css"/>
+        <link rel="stylesheet" href="/static/style/bootstrap-grid.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/static/style/all_style.css">
+        <link rel="stylesheet" href="/static/style/hiveMap_style.css">
+
+        <link rel="icon" href="../static/image/icon.svg"/>
+        <script src="static/scripts/map.js" defer></script>
+        <title>BeeBuzz Hive Checker</title>
+    </head>
+
+    <body>
+
+        <div id="title-div">
+
+            <h1 id="title">Hive Checker</h1>
+
+            <!-- TODO Background image -->
+
+        </div>
+
+        <nav id = "navigation" class="">
+            <a href="{{url_for('index')}}" class="">Main Page</a>
+            <a href="{{url_for('ourSolution')}}" class="">Our Solution</a>
+            <a href="{{url_for('addHive')}}" class="">Add a Hive</a>
+        </nav>
+
+        <div class = "columns-40-40">
+            <meta id="temperature" temperature="{{ temperature }}"></meta>
+            <meta id="humidity" humidity="{{ humidity }}"></meta>
+            <div class = "column-40">
+                <div id="mapid" style="height: 300px; width: 100%;"></div>
+            </div>
+
+            <div class = "column-40">
+                <!-- TODO add dynamic table with the hive information -->
+            </div>
+
+        </div>
+
+        <div class="column-80">
+            <!-- Add statistics for individual hive -->
+        </div>
+
+    </body>
+</html>

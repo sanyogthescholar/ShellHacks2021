@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="/static/style/bootstrap.css"/>
+        <link rel="stylesheet" href="/static/style/bootstrap-grid.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/static/style/all_style.css">
+        <link rel="stylesheet" href="/static/style/index_style.css">
+
+        <link rel="icon" href="../static/image/icon.svg"/>
+        
+        <title>BeeBuzz Home</title>
+    </head>
+
+    <body>
+
+        <div id="title-div">
+
+            <h1 id="title" class="text-center align-self-center">BEEBUZZ</h1>
+
+        </div>
+
+        <div class = "columns-40-40">
+        
+            <div class = "column-40">
+                <!-- TODO add statistics -->
+            </div>
+
+            <section class = "column-40">
+                <p>The reason why we created this project is...
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis knostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+
+        </div>
+
+        <div class = "columns-25-25-25">
+        
+            <div id="column-1" class = "column-25">
+                <h2 class="index-button text-center"><a href="{{url_for('ourSolution')}}" style = "color:white; text-decoration: none">Our Solution</a></h2>
+            </div>
+
+            <div id="column-2" class = "column-25">
+                <h2 class="index-button text-center"><a href="{{url_for('addHive')}}" style = "color:white; text-decoration: none">Enter hive</a></h2>
+            </div>
+
+            <div id="column-3" class = "column-25">
+                <h2 class="index-button text-center"><a href="{{url_for('hiveMap')}}" style = "color:white; text-decoration: none">Check hives</a></h2>
+            </div>
+
+        </div>
+
+    </body>
+</html>

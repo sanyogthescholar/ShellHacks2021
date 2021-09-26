@@ -5,6 +5,8 @@
 
         <link rel="stylesheet" href="/static/style/bootstrap.css"/>
         <link rel="stylesheet" href="/static/style/bootstrap-grid.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,7 @@
         <link rel="stylesheet" href="/static/style/hiveMap_style.css">
 
         <link rel="icon" href="../static/image/icon.svg"/>
-
+        <script src="static/scripts/map.js" defer></script>
         <title>BeeBuzz Hive Checker</title>
     </head>
 
@@ -36,7 +38,7 @@
 
         <div class = "columns-40-40">
             <div class = "column-40">
-                <!-- TODO add map -->
+                <div id="mapid" style="height: 300px; width: 100%;"></div>
             </div>
 
             <div class = "column-40">

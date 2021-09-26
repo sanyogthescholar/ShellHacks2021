@@ -44,10 +44,10 @@ def update_db():
         cur.execute(
             "CREATE TABLE IF NOT EXISTS beehive_data (time TEXT , temperature FLOAT, humidity FLOAT)"
         )
-        cur.execute("INSERT INTO beehive_data VALUES("+str(datetime.now().strftime("%H:%M:%S")+"," + str(temperature) + "," + str(humidity)))
+        cur.execute("INSERT INTO beehive_data VALUES("+str(datetime.now().strftime('%H:%M:%S')+"," + str(temperature) + "," + str(humidity)))
         conn.commit()
 
 if __name__ == '__main__':
-    t = Timer(300.0, update_db)
+    t = Timer(3.0, update_db)
     t.start()
     app.run(debug=True, host='0.0.0.0')

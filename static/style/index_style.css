@@ -3,10 +3,10 @@
 
         border-radius: 20px;
 
-        background: url("/static/image/bees_6.jpg") no-repeat center center fixed;
-        background-size: cover;
-        height: 30vh;
+        height: 20vh;
         overflow: hidden;
+        background-color: #ffc107;
+        text-shadow: 2px 2px #fd7e14;
 }
 
 #column-2{
@@ -14,22 +14,25 @@
 
         border-radius: 20px;
 
-        background: url("/static/image/bees_6.jpg") no-repeat center center fixed;
-        background-size: cover;
-        height: 30vh;
+        height: 20vh;
         overflow: hidden;
+        background-color: #fd7e14;
+        text-shadow: 2px 2px #ffc107;
 }
 
 #column-3{
         border-radius: 20px;
 
-        background: url("/static/image/bees_6.jpg") no-repeat center center fixed;
-        background-size: cover;
-        height: 30vh;
+        height: 20vh;
         overflow: hidden;
+        background-color: #ffc107;
+        text-shadow: 2px 2px #fd7e14;
 }
 
 .index-button{
-        padding-top: 12vh;
-        text-shadow: 2px 2px #ffc107;
+        padding-top: 7vh;
+}
+
+img {
+        width: 36vw;
 }

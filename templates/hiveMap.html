@@ -5,6 +5,7 @@
 
         <link rel="stylesheet" href="/static/style/bootstrap.css"/>
         <link rel="stylesheet" href="/static/style/bootstrap-grid.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
 
@@ -37,6 +38,8 @@
         </nav>
 
         <div class = "columns-40-40">
+            <meta id="temperature" data-playlist="{{ temperature }}"></meta>
+            <meta id="humidity" data-playlist="{{ humidity }}"></meta>
             <div class = "column-40">
                 <div id="mapid" style="height: 300px; width: 100%;"></div>
             </div>

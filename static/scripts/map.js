@@ -7,4 +7,6 @@ console.log("map.js succesfully executed");
 var marker = L.marker([51.5, -0.09]).addTo(mymap);
 var temperature = $('#temperature').data("temperature");
 var humidity = $('#humidity').data("humidity");
+console.log(temperature);
+console.log(humidity);
 marker.bindPopup("Temperature is "+ temperature +" and humidity is "+ humidity).openPopup();

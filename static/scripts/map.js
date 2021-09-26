@@ -9,4 +9,4 @@ var temperature = $('#temperature')[0].attributes[1].nodeValue;
 var humidity = $('#humidity')[0].attributes[1].nodeValue;
 console.log(temperature);
 console.log(humidity);
-marker.bindPopup("Temperature is "+ temperature +" and humidity is "+ humidity + "%").openPopup();
+marker.bindPopup("Temperature is "+ parseFloat(temperature).toFixed(2) +"° C and humidity is "+ parseFloat(humidity).toFixed(2) + "%").openPopup();

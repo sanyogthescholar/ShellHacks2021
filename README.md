@@ -1,5 +1,3 @@
-# ShellHacks2021
-
 ![Statistics](https://i.ibb.co/sFdXxDB/stats.png)
 
 ## Inspiration 🍯
@@ -29,6 +27,7 @@ _BeeBuzz_ consists of sensors and a webpage which: <br/>
 🐝 enable beekeepers to **map** 🗺  their hives<br/> 
 🐝 track the **hives' condition** <br/> 
 🐝 **notify** for any abnormalities in the **temperature** and **humidity** level of the hives<br/>
+🐝 Save the data to a **database** for retention<br/>
 
 <br/>
 
@@ -62,6 +61,7 @@ _BeeBuzz_ is saving the bees with the help of: <br/>
 
 🐝 How to interact with the Pi's GPIO in real time <br/>
 🐝 Getting sensor values in real time <br/>
+🐝 Implementing CockroachDB in our project<br/>
 
 <br/>
 

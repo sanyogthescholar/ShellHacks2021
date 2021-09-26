@@ -44,7 +44,7 @@ def update_db():
         cur.execute(
             "CREATE TABLE IF NOT EXISTS beehive_data (time TEXT , temperature FLOAT, humidity FLOAT)"
         )
-        cur.execute("INSERT INTO beehive_data VALUES("+str(datetime.now().strftime('%H-%M'))+"," + str(temperature) + "," + str(humidity)+");")
+        cur.execute("INSERT INTO beehive_data VALUES(%s, %s, %s);", (str(datetime.now().strftime('%H-%M')),str(temperature),str(humidity)))
         conn.commit()
 
 if __name__ == '__main__':

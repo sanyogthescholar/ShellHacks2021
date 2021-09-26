@@ -1,7 +1,18 @@
 from flask import Flask, render_template
 import Adafruit_DHT
+import psycopg2
+import os
+from threading import Timer
+from datetime import datetime
 
 app = Flask(__name__)
+
+conn = psycopg2.connect(
+    host="free-tier.gcp-us-central1.cockroachlabs.cloud",
+    port=26257,
+    database="muted-rhino-1559.defaultdb",
+    user=os.environ['COCKROACH_USER'],
+    password=os.environ['COCKROACH_PASSWORD'])
 
 DHT_SENSOR = Adafruit_DHT.DHT22
 DHT_PIN = 4
@@ -27,5 +38,16 @@ def ourSolution():
 def addHive():
     return render_template('addHive.html')
 
+def update_db():
+    humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
+    with conn.cursor() as cur:
+        cur.execute(
+            "CREATE TABLE IF NOT EXISTS beehive_data (time TEXT , temperature FLOAT, humidity FLOAT)"
+        )
+        cur.execute("INSERT INTO beehive_data VALUES(%s, %s, %s);", (str(datetime.now().strftime('%H:%M:%S')),str(temperature),str(humidity)))
+        conn.commit()
+
 if __name__ == '__main__':
+    t = Timer(300.0, update_db)
+    t.start()
     app.run(debug=True, host='0.0.0.0')

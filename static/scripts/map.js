@@ -5,4 +5,4 @@ L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
 }).addTo(mymap);
 console.log("map.js succesfully executed");
 var marker = L.marker([51.5, -0.09]).addTo(mymap);
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+marker.bindPopup("Temperature is {{temperature}} and humidity is {{humidity}}").openPopup();

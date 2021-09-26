@@ -24,6 +24,7 @@ body{
 }
 
 .columns-40-40 {
+    display: inline-flex;
     width: 80vw;
     margin-left: 7vw;
     margin-right: 7vw;
@@ -57,4 +58,8 @@ body{
 .nav-item:hover{
     background-color: #ffc107;
     color: #414139;
+}
+
+section{
+    text-align: justify;
 }
